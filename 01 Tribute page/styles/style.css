@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+html, body {
+	font-size: 16px;
+	text-align: justify;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.8;
+	margin: 0;
+	color: #37383a;
+	background-color: #ffebee;
+	text-align: center;
+}
+  
+h1, h2, h3{
+	color: #b61827;
+}
+
+h1 {
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 300;
+}
+/* ----------------- HERO */
+
+.container_hero{
+	display: flex;
+}
+
+.hero_text {
+	float: right;
+	width: 120%;
+	padding-left: 5%;
+	text-align: justify;
+}
+
+.hero {
+	padding: 5rem;
+	top: 0;
+}
+
+/* ----------------- BIOGRAFIA */
+
+.bio {
+	color: #37383a;
+	padding: 0 5rem 5rem 5rem;
+	text-align: justify;
+}
+
+h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+/* ----------------- CITAS */
+  
+.quotes {
+	background-color: #ff867c;
+	color: white;
+	padding: 3rem 5rem 3rem 5rem;
+}
+
+blockquote {
+	font-size: 2rem;
+	font-style: italic;
+	margin-bottom: 5rem;
+}
+
+/* ----------------- GALERIA */
+
+.row1{
+	display: flex;
+	justify-content:space-around;
+}
+
+.row2{
+	display: flex;
+	justify-content:space-around;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;	
+}
+
+#image{
+	max-height: 60%;
+	
+}
+
+.img-container{
+	max-height: 100%;
+	max-width: 30%;
+}
+
+/* ----------------- FUENTES */
+
+li {
+	list-style: none;
+	padding-left: 0;
+	line-height: 2;
+}
+
+a{
+	text-decoration: none;
+}
+.references {
+	padding: 4rem;
+	text-align: center;
+	margin-bottom: 6rem;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #e90000
+}
+  
+a:visited {
+	color: #37383a;
+}
+  
+
+/* ----------------- FOOTER */
+
+.footer {
+	background-color: #ff867c;
+	color: black;
+	padding: 0.2rem;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+

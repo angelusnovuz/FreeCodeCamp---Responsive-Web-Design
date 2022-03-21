@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Survey form ui created for the FreeCodeCamp's Responsive Web Design Certification.">
+	<link rel="stylesheet" href="styles/styles.css">
+	<title>Formulario</title>
+</head>
+<body>
+<div class="container">
+	<!-- Presentación -->
+	<header class="header">
+		<div class="column-header">
+			<h1 id="title">Learner Experience Survey</h1>
+			<p id="description">Nos gustaría saber un poco más sobre su experiencia con el curso. Gracias por dedicar su tiempo y ayuarnos a mejorar la plataforma.</p>
+		</div>
+		<figure class="column-image">
+			<img src="assets/img/intro.svg" class="image-div">
+		</figure>
+	</header>
+	
+	<form action="survey-form">
+
+		<!-- Preguntas Escritas -->
+		<div class="form-group">
+			<label id="name-label" for="name">Nombre</label><br>
+			<input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required/>
+		</div>
+
+		<div class="form-group">
+			<label id="name-label" for="name">Apellido</label><br>
+			<input type="text" name="name" id="apellido" class="form-control" placeholder="Ingresa tu apellido" required/>
+		</div>
+
+		<div class="form-group">
+			<label id="email-label" for="email">Email</label><br>
+			<input type="text" name="email" id="email" class="form-control" placeholder="Ingresa tu email" required/>
+		</div>
+		<div class="form-group">
+			<label id="number-label" for="age">Numero Telefonico</label><br>
+			  <input type="tel" name="number" id="number" class="form-control" placeholder="Numero Telefonico"/>
+		</div>
+
+		<div class="form-group">
+			<label id="age-label" for="Age">Edad</label><br>
+			  <input type="number" name="age" id="age" min="10" max="99" class="form-control" placeholder="Edad"/>
+		</div>
+
+		<!-- Preguntas de Opcion -->
+		<section class="form-group">
+			<p>Situación laboral</p>
+				<select id="dropdown" name="role" class="form-control" required>
+				  <option disabled selected value>Seleccione su estado actual</option>
+				  <option value="student">Estudiante</option>
+				  <option value="job-full">Empleado a tiempo completo</option>
+				  <option value="job-part">Empleado a tiempo parcial</option>
+				  <option value="self-employed">Autoempleo</option>
+				  <option value="unemployed">Desempleado</option>
+				  <option value="retired">Retirado</option>
+				  <option value="preferNo">Prefiero no decir</option>
+				  <option value="other">Otros</option>
+				</select>
+		</section>
+				
+		<section class="form-group">
+			<p>Nivel de Experiencia</p>
+				<select id="experience-dropdown" name="experience" class="form-control" required>
+				  <option disabled selected value>Seleccione su nivel de experiencia pertinente</option>
+				  <option value="junior">Junior (0-2 años de experiencia)</option>
+				  <option value="mid">Nivel Medio (2+ años de experiencia)</option>
+				  <option value="senior">Senior</option>
+				  <option value="executive">Executive</option>
+				  <option value="other">Otro</option>
+				</select>
+		</section>	
+
+		<div class="form-group">
+			<p>En general, ¿Cómo calificaría el curso?</p>
+			<label><input name="user-rate"  type="radio" class="input-radio"/>Excelente</label>
+			<label><input name="user-rate"  type="radio" class="input-radio"/>Muy bien</label>
+			<label><input name="user-rate"  type="radio" class="input-radio"/>Bien</label>
+			<label><input name="user-rate"  type="radio" class="input-radio"/>Deficiente</label>
+			<label><input name="user-rate"  type="radio" class="input-radio"/>Mediocre</label>
+		</div>
+			
+		<div class="form-group">
+			<p>¿Recomendarías freeCodeCamp a un amigo?</p>
+			<label><input name="user-rate"  type="radio" class="input-radio"/>Definitivamente</label>
+			<label><input name="user-rate"  type="radio" class="input-radio"/>Tal vez</label>
+			<label><input name="user-rate"  type="radio" class="input-radio"/>No Realmente</label>
+		</div>
+
+		<div class="form-group">
+			<p>¿Qué le gustaría mejorar?</p>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Front-end Projects</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Back-end Projects</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Data Visualization</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Challenges</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Videos</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Wiki</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Forum</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Additional Courses</label>
+		</div>
+				
+				
+		<div class="form-group">
+			<p>¿Qué tan útiles fueron los materiales del curso (lecturas, videos, tareas, etc.)?</p>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Lecturas y videos</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Manuales practicos</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Tareas y proyectos del curso</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Trabajos y exámenes calificados</label>
+			<label><input name="user-rate"  type="checkbox" class="input-checkbox"/>Foros y chats de apoyo</label>
+		</div>
+
+		<div class="form-group">
+			<textarea name="comentario" class="input-textarea" placeholder="Ingrese comentario ..."></textarea><br>
+		</div>
+
+		<div class="form-group">
+			<button id="submit" type="submit" class="submit-button">Enviar</button>
+		</div>
+	</form>
+</div>
+</body>
+
+<footer>
+	<p> Design & Development - AngelusNovux </p>
+</footer>
+</html>
